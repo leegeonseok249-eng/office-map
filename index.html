@@ -68,28 +68,6 @@
     .home-card h1 { font-size: 26px; margin-bottom: 12px; letter-spacing: -0.5px; position: relative; z-index: 2; }
     .home-card p { color: #666666; font-size: 15px; word-break: keep-all; position: relative; z-index: 2; }
 
-    .home-card[data-target="가산DK오피스"]::before {
-      content: ""; position: absolute; top: 0; left: 0; width: 50%; height: 100%;
-      background: url('EKSKDHK.png') no-repeat center center; background-size: 55% auto;
-      opacity: 0.15; border-right: 1px dashed #eaeaea; z-index: 1;
-    }
-    .home-card[data-target="가산DK오피스"]::after {
-      content: ""; position: absolute; top: 0; right: 0; width: 50%; height: 100%;
-      background: url('DPSNF..jpg') no-repeat center center; background-size: 55% auto;
-      opacity: 0.15; z-index: 1;
-    }
-
-    .home-card[data-target="대륭오피스"]::before {
-      content: ""; position: absolute; top: 0; left: 0; width: 50%; height: 100%;
-      background: url('EKSKDHK_2.png') no-repeat center center; background-size: 55% auto;
-      opacity: 0.15; border-right: 1px dashed #eaeaea; z-index: 1;
-    }
-    .home-card[data-target="대륭오피스"]::after {
-      content: ""; position: absolute; top: 0; right: 0; width: 50%; height: 100%;
-      background: url('DPSNF._2.jpg') no-repeat center center; background-size: 55% auto;
-      opacity: 0.15; z-index: 1;
-    }
-
     /* ==========================================================================
        [4] 검색바 및 레이아웃
        ========================================================================== */
@@ -166,8 +144,8 @@
       transition: all 0.2s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.02);
     }
     .spot:hover { transform: translateY(-3px); box-shadow: 0 10px 15px rgba(0,0,0,0.08); z-index: 30; }
-    .spot strong { font-size: 14px; letter-spacing: -0.4px; color: #1e293b; font-weight: 800; }
-    .spot span { font-size: 11px; color: #64748b; line-height: 1.35; margin-top: 2px; }
+    .spot strong { font-size: 15px; letter-spacing: -0.4px; color: #1e293b; font-weight: 800; }
+    .spot span { font-size: 12px; color: #64748b; line-height: 1.35; margin-top: 2px; }
 
     .spot.desk {
       border: 1px solid #cbd5e1 !important;
@@ -179,7 +157,7 @@
       justify-content: center;
       padding: 4px;
     }
-    .spot.desk strong { font-size: 13.5px !important; font-weight: 800 !important; color: #334155 !important; }
+    .spot.desk strong { font-size: 14.5px !important; font-weight: 800 !important; color: #334155 !important; }
     .spot.desk span { font-size: 11px; color: #64748b; }
     
     .spot.desk.vertical {
@@ -189,7 +167,7 @@
       padding: 4px 2px !important;
       white-space: nowrap !important;
     }
-    .spot.desk.vertical strong { margin: 0; font-size: 13.5px !important; }
+    .spot.desk.vertical strong { margin: 0; font-size: 14.5px !important; }
     .spot.desk.vertical span { display: none !important; }
     .spot.desk.vertical br { display: none !important; }
 
@@ -219,47 +197,68 @@
     .spot.elevator strong { font-size: 20px !important; color: #1e293b !important; }
     .spot.elevator span { display: none !important; }
 
+    /* 일반 출입문 스타일 */
     .spot.door.exit {
       background-color: #ffffff !important; border: 3px solid #111111 !important; border-radius: 8px !important;
     }
     .spot.door.exit strong { font-size: 16px !important; color: #111 !important; }
     .spot.door.exit span { display: none !important; }
 
+    /* [NEW] 첨부 이미지 스타일을 반영한 상단 출입문 전용 스타일 */
+    .spot.door.top-entrance {
+      background-color: #eafbee !important; 
+      border: 3px solid #22c55e !important; 
+      border-radius: 2px !important;
+      box-shadow: none !important;
+    }
+    .spot.door.top-entrance strong { font-size: 24px !important; color: #166534 !important; letter-spacing: 3px; }
+    .spot.door.top-entrance span { display: none !important; }
+
+    /* 본부 단위 구역 스타일 */
     .spot.macro-zone.digi-curation {
       border: 3px dashed #3b82f6 !important; background-color: rgba(239, 246, 255, 0.08) !important;
       pointer-events: none; z-index: 1 !important; display: flex !important; flex-direction: column;
       justify-content: flex-start; align-items: flex-start; padding: 16px !important; border-radius: 20px !important;
     }
-    .spot.macro-zone.digi-curation strong { font-size: 18px !important; color: #1d4ed8 !important; font-weight: 800 !important; margin-bottom: 2px !important; }
-    .spot.macro-zone.digi-curation span { font-size: 11px !important; color: #3b82f6 !important; display: block !important; }
+    .spot.macro-zone.digi-curation strong { font-size: 20px !important; color: #1d4ed8 !important; font-weight: 800 !important; margin-bottom: 2px !important; }
+    .spot.macro-zone.digi-curation span { font-size: 12px !important; color: #3b82f6 !important; display: block !important; }
 
     .spot.macro-zone.e-market {
       border: 3px dashed #10b981 !important; background-color: rgba(209, 250, 229, 0.08) !important;
       pointer-events: none; z-index: 1 !important; display: flex !important; flex-direction: column;
       justify-content: flex-start; align-items: flex-start; padding: 16px !important; border-radius: 20px !important;
     }
-    .spot.macro-zone.e-market strong { font-size: 18px !important; color: #047857 !important; font-weight: 800 !important; margin-bottom: 2px !important; }
-    .spot.macro-zone.e-market span { font-size: 11px !important; color: #10b981 !important; display: block !important; }
+    .spot.macro-zone.e-market strong { font-size: 20px !important; color: #047857 !important; font-weight: 800 !important; margin-bottom: 2px !important; }
+    .spot.macro-zone.e-market span { font-size: 12px !important; color: #10b981 !important; display: block !important; }
 
     .spot.macro-zone.biz-solution {
       border: 3px dashed #f59e0b !important; background-color: rgba(254, 243, 199, 0.08) !important;
       pointer-events: none; z-index: 1 !important; display: flex !important; flex-direction: column;
       justify-content: flex-start; align-items: flex-start; padding: 16px !important; border-radius: 20px !important;
     }
-    .spot.macro-zone.biz-solution strong { font-size: 18px !important; color: #b45309 !important; font-weight: 800 !important; margin-bottom: 2px !important; }
-    .spot.macro-zone.biz-solution span { font-size: 11px !important; color: #f59e0b !important; display: block !important; }
+    .spot.macro-zone.biz-solution strong { font-size: 20px !important; color: #b45309 !important; font-weight: 800 !important; margin-bottom: 2px !important; }
+    .spot.macro-zone.biz-solution span { font-size: 12px !important; color: #f59e0b !important; display: block !important; }
 
+    .spot.macro-zone.business-lounge {
+      border: 3px dashed #db2777 !important; background-color: rgba(253, 242, 248, 0.08) !important;
+      pointer-events: none; z-index: 1 !important; display: flex !important; flex-direction: column;
+      justify-content: flex-start; align-items: flex-start; padding: 16px !important; border-radius: 20px !important;
+    }
+    .spot.macro-zone.business-lounge strong { font-size: 20px !important; color: #be185d !important; font-weight: 800 !important; margin-bottom: 2px !important; }
+    .spot.macro-zone.business-lounge span { font-size: 12px !important; color: #db2777 !important; display: block !important; }
 
-    .spot.macro-zone.executive-meeting, .spot.macro-zone.business-lounge { display: none !important; }
+    .spot.macro-zone.executive-meeting { display: none !important; }
 
-    #mapContent.zoomed-out .spot { display: none !important; }
+    /* 맵 축소(Zoom-out) 시 오버라이드 스타일 */
+    #mapContent.zoomed-out .spot { display: none !important; } 
+    
     #mapContent.zoomed-out .spot.macro-zone {
       display: flex !important; flex-direction: column; justify-content: center !important; align-items: center !important;
       pointer-events: auto !important; border-radius: 24px !important; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06) !important;
       transition: all 0.2s ease;
     }
     #mapContent.zoomed-out .spot.macro-zone:hover { transform: translateY(-4px); box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12) !important; }
-    #mapContent.zoomed-out .spot.macro-zone strong { font-size: 26px !important; font-weight: 900 !important; letter-spacing: -0.5px !important; }
+    #mapContent.zoomed-out .spot.macro-zone strong { font-size: 74px !important; font-weight: 900 !important; letter-spacing: -0.5px !important; }
     #mapContent.zoomed-out .spot.macro-zone span { font-size: 14px !important; color: rgba(0, 0, 0, 0.5) !important; display: block !important; margin-top: 4px !important; }
 
     #mapContent.zoomed-out .spot.macro-zone.digi-curation { background-color: #fee2e2 !important; border: 3px solid #fca5a5 !important; }
@@ -291,6 +290,71 @@
       animation: pop 1.1s ease-in-out infinite; z-index: 40;
     }
     @keyframes pop { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+
+    /* ==========================================================================
+       [NEW] 커스텀 라운지 및 회의실 도면 스타일 (가로 확장 및 스케일업)
+       ========================================================================== */
+    .lounge-zone {
+        border: 8px solid #facc15 !important;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.8) !important;
+        box-shadow: none !important;
+        overflow: hidden;
+        display: block !important;
+    }
+    .lounge-text {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        font-size: 90px; font-weight: 900; color: #db2777;
+        background: rgba(255, 255, 255, 0.7); padding: 15px 40px; border-radius: 30px;
+        pointer-events: none; mix-blend-mode: multiply; letter-spacing: 6px;
+    }
+    .conf-room {
+        border: 5px solid #2563eb !important;
+        border-radius: 30px !important;
+        background-color: white !important;
+        transition: background-color 0.2s, transform 0.2s;
+        display: block !important;
+    }
+    .conf-room:hover { background-color: #eff6ff !important; transform: translateY(-3px); }
+    .conf-inner-table {
+        width: 62px; height: 60%; border: 3px solid #cbd5e1; border-radius: 40px;
+        position: absolute; top: 10%; left: 50%; transform: translateX(-50%); background: white;
+    }
+    .conf-text {
+        position: absolute; bottom: 20px; width: 100%; text-align: center;
+        color: #1d4ed8; font-weight: 800; font-size: 25px; line-height: 1.1;
+        transition: transform 0.2s;
+    }
+    .conf-room:hover .conf-text { transform: scale(1.1); }
+    
+    .small-room {
+        border: 4px solid #2563eb !important;
+        border-radius: 12px !important;
+        background-color: white !important;
+        transition: background-color 0.2s, transform 0.2s;
+        display: block !important;
+    }
+    .small-room:hover { background-color: #eff6ff !important; transform: translateY(-3px); }
+    .room-label {
+        position: absolute; top: 10px; left: 16px; color: #1d4ed8; font-weight: 800; font-size: 28px;
+        transition: transform 0.2s; transform-origin: top left;
+    }
+    .small-room:hover .room-label { transform: scale(1.1); }
+    .small-room.bottom-label .room-label {
+        top: auto; bottom: 10px; left: 50%; transform: translateX(-50%); transform-origin: center bottom;
+    }
+    .small-room.bottom-label:hover .room-label { transform: translateX(-50%) scale(1.1); }
+    
+    .small-table {
+        width: 42px; height: 60%; border: 3px solid #cbd5e1; background: white;
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    }
+    
+    /* 공통 가구 스타일 */
+    .table-rect { background: white; border: 3px solid #cbd5e1; position: relative; border-radius: 4px; }
+    .table-round { background: white; border: 3px solid #cbd5e1; border-radius: 50%; position: relative; }
+    .chair { width: 16px; height: 16px; border: 2px solid #94a3b8; border-radius: 4px; background: white; }
+    .chair-round { width: 16px; height: 16px; border: 2px solid #94a3b8; border-radius: 50%; background: white; position: absolute; }
 
     /* ==========================================================================
        [6] 하단 정보창 및 리스트
@@ -414,7 +478,6 @@
     
     <header class="top">
       <div>
-        <!-- 로고에 id 추가 및 이스터에그 클릭 적용 영역 -->
         <div class="brand"><span class="logo" id="brandLogo" title="관리자 모드 접속 시 5번 연속 클릭">CW</span>ConnectWave</div>
         <h1>오피스 통합 안내도</h1>
         <p class="sub">전사 임직원의 위치와 회의실, 공용공간을 <b>마우스 휠로 확대/축소</b>하며 찾아보세요.<br />직원명, 직책, 팀명을 검색하면 해당 위치가 깜빡입니다.</p>
@@ -451,15 +514,15 @@
         </div>
         <div class="home-card" data-target="대륭오피스">
           <h1>대륭오피스</h1>
-          <p>부서별 상세 배치도<br/>CC CTO / HQ / 스윗트래커</p>
+          <p>17층 상세 배치도<br/>CC CTO / HQ / 스윗트래커</p>
         </div>
         <div class="home-card" data-target="우림오피스">
           <h1>우림오피스</h1>
-          <p>부서별 상세 배치도<br/>메이크샵 / 몰테일</p>
+          <p>14층 상세 배치도<br/>메이크샵 / 몰테일</p>
         </div>
         <div class="home-card" data-target="구로오피스">
           <h1>구로오피스</h1>
-          <p>부서별 상세 배치도<br/>플레이오토</p>
+          <p>14층 상세 배치도<br/>플레이오토</p>
         </div>
       </div>
     </div>
@@ -467,7 +530,7 @@
     <div id="officeView" class="office-view">
       <div class="search-wrap">
         <div class="search-box">
-          <input id="searchInput" type="text" placeholder="현재 층내 검색 (직원명, 팀명, 시설 등)" />
+          <input id="searchInput" type="text" placeholder="통합 검색 (전사 임직원, 부서, 회의실명 등)" />
           <button type="button" id="searchButton"><i class="fas fa-search"></i> 검색</button>
         </div>
       </div>
@@ -490,7 +553,6 @@
 
           <div class="category-bar" id="categoryBar"></div>
 
-          <!-- 위치/주차 안내 영역 -->
           <div id="locationWrap" class="loc-wrap">
             <div class="loc-section">
               <div class="loc-header">오시는 길</div>
@@ -532,12 +594,12 @@
                               <span style="display: block; color: #111; font-weight: 800; margin-bottom: 8px;">[접속 계정 정보]</span>
                               사용자 ID : <b style="color:#111; font-size: 15px;">HT1802</b><br>
                               비밀번호 : <b style="color:#111; font-size: 15px;">1234</b><br>
-                              <span style="color: #ef4444; font-size: 13px; display: block; margin-top: 8px; font-weight: 600;"><i class="fas fa-exclamation-triangle"></i> ※ 임의 변경 불가, 5번 오류 시 사용 불가</span>
+                              <span style="color: #ef4444; font-size: 13px; display: block; margin-top: 8px; font-weight: 600;"><i class="fas fa-exclamation-triangle"></i> ※ 임 임의 변경 불가, 5번 오류 시 사용 불가</span>
                           </div>
                       </li>
                       <li style="border-top: 1px dashed #cbd5e1; padding-top: 16px;">
                           <strong style="color: #d71920; font-size: 16px; margin-bottom: 6px; display: block;"><i class="fas fa-car"></i> 1시간 이상 주차 시</strong>
-                          출차 20분 전 담당자(<b style="color: #111;">@이건석</b>)에게 차량번호 등록 요청<br>
+                          출차 20분 전 담당자(<b style="color: #111;">정아름, 이건석</b>)에게 차량번호 등록 요청<br>
                           <span style="font-size: 14px; color: #64748b; margin-top: 4px; display: inline-block;">(직접 방문 또는 사내 메신저 활용)</span>
                       </li>
                     </ul>
@@ -547,10 +609,8 @@
             </div>
           </div>
 
-          <!-- 줌 및 드래그가 적용되는 맵 영역 -->
           <div class="map-frame" id="mapFrame">
             <div class="zoom-controls">
-              <!-- 관리자용 격자(그리드) 보기 버튼 (관리자 모드 활성화 시에만 보임) -->
               <button id="gridToggleBtn" onclick="toggleGrid()" title="관리자 모드 (격자 표시)"><i class="fas fa-border-all"></i></button>
               <button onclick="zoomIn()" title="확대"><i class="fas fa-plus"></i></button>
               <button onclick="zoomOut()" title="축소"><i class="fas fa-minus"></i></button>
@@ -558,8 +618,7 @@
             </div>
             <div class="map-inner" id="mapInner">
               <div id="mapContent">
-                <!-- spots 렌더링 -->
-              </div>
+                </div>
             </div>
           </div>
 
@@ -575,24 +634,19 @@
             <span class="facility">비품/시설</span>
           </div>
 
-          <!-- 하단 정보 리스트 -->
           <div class="store-list" id="storeList"></div>
         </section>
       </main>
     </div>
   </div>
 
-  <!-- [NEW] 이스터에그: 관리자 인증 모달 -->
   <div class="pin-modal-overlay" id="pinModal">
     <div class="pin-modal">
       <h3>관리자 모드 활성화</h3>
       <p>에디터 기능을 켜려면 PIN을 입력하세요.</p>
-      
       <input type="password" id="pinInput" placeholder="PIN" maxlength="4" autocomplete="off" />
-      
       <div id="pinErrorMsg" class="pin-msg error"><i class="fas fa-exclamation-circle"></i> PIN 번호가 일치하지 않습니다.</div>
       <div id="pinSuccessMsg" class="pin-msg success"><i class="fas fa-check-circle"></i> 관리자 기능이 활성화되었습니다.</div>
-      
       <div class="btn-wrap">
         <button class="btn-cancel" id="pinCancelBtn">취소</button>
         <button class="btn-confirm" id="pinConfirmBtn">확인</button>
@@ -600,7 +654,6 @@
     </div>
   </div>
 
-  <!-- [NEW] 관리자 에디터: 좌석 정보 수정 모달 -->
   <div class="edit-modal-overlay" id="editModal">
     <div class="edit-modal">
       <h3>자리 정보 수정</h3>
@@ -623,28 +676,16 @@
     </div>
   </div>
 
-  <!-- [NEW] 클라우드 저장 완료 알림(토스트) -->
   <div id="saveToast" class="save-toast"><i class="fas fa-cloud-upload-alt mr-1"></i> 실시간 클라우드에 저장되었습니다.</div>
 
-  <!-- [NEW] Firebase 및 자바스크립트 로직 (모듈 적용) -->
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
     import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
     import { getFirestore, doc, setDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-   // --- [1] Firebase 연동 설정 ---
-    // 2단계에서 복사한 본인의 firebaseConfig 값을 여기에 붙여넣으세요.
-    const firebaseConfig = {
-  apiKey: "AIzaSyC7E-z_votRHTIgC0t0EFyEsZjOIjqnA98",
-  authDomain: "connectwave-35809.firebaseapp.com",
-  projectId: "connectwave-35809",
-  storageBucket: "connectwave-35809.firebasestorage.app",
-  messagingSenderId: "679301708664",
-  appId: "1:679301708664:web:1961d5709638becf4ea68d"
-};
-    
-    // 사내 오피스 고유 ID (원하는 이름으로 지정)
-    const appId = "my-company-office-2026";
+    // --- [1] Firebase 연동 설정 ---
+    const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+    const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-office-app';
     
     let app, auth, db, currentUser = null;
     let useFirebase = false;
@@ -675,7 +716,9 @@
     function generateDefaultOfficeData() {
       function createGasan18Data() {
         const spots = [];
-        const cellW = 34, cellH = 26, xOffset = 50, yOffset = 50;
+        
+        // --- 전체 셀 크기 확대 (기존 48x36 -> 56x42 약 16% 증가) ---
+        const cellW = 56, cellH = 42, xOffset = 50, yOffset = 50;
 
         function gridX(col) { return xOffset + (col - 1) * cellW; }
         function gridY(row) { return yOffset + (row - 1) * cellH; }
@@ -697,144 +740,414 @@
             });
         }
 
-        spots.push({ name: "비즈니스 & 라운지", sub: "Business Support & Lounge Area", info: "비즈니스 지원 부서 조직 및 전직원 휴게 라운지", type: "macro-zone business-lounge", isDesk: false, x: gridX(1) - 10, y: gridY(1) - 10, w: gridW(16) + 20, h: gridH(22) + 20, originalName: "비즈니스 & 라운지" });
-        spots.push({ name: "큐레이션본부", sub: "Digital Curation Division", info: "큐레이션본부 전체 부서 및 협업 영역", type: "macro-zone digi-curation", isDesk: false, x: gridX(19) - 10, y: gridY(1) - 10, w: gridW(42) + 20, h: gridH(22) + 20, originalName: "큐레이션본부" });
-        spots.push({ name: "E마켓본부", sub: "E-Market Division", info: "E마켓본부 전체 부서 영역", type: "macro-zone e-market", isDesk: false, x: gridX(34) - 10, y: gridY(29) - 10, w: gridW(27) + 20, h: gridH(15) + 20, originalName: "E마켓본부" });
-        spots.push({ name: "큐레이션본부, 비즈니스솔루션본부", sub: "Curation & Biz Solution", info: "통합 영역", type: "macro-zone biz-solution", isDesk: false, x: gridX(1) - 10, y: gridY(51) - 10, w: gridW(60) + 20, h: gridH(18) + 20, originalName: "큐레이션본부, 비즈니스솔루션본부" });
-        spots.push({ name: "대표 임원실 및 회의실", sub: "Executive & Meeting Room Area", info: "대표이사 공간 및 중대형 주간 회의 전용 공간", type: "macro-zone executive-meeting", isDesk: false, x: gridX(62) - 10, y: gridY(1) - 10, w: gridW(5) + 20, h: gridH(22) + 20, originalName: "대표 임원실 및 회의실" });
+        // --- 매크로 구역 (배경) ---
+        spots.push({ name: "라운지 & 회의실", sub: "Lounge & Meeting Room", info: "비즈니스 지원 부서 조직 및 전직원 휴게 라운지", type: "macro-zone business-lounge", isDesk: false, x: gridX(1) - 10, y: gridY(1) - 10, w: gridW(44) + 20, h: gridH(22) + 20, originalName: "라운지 & 회의실" });
+        spots.push({ name: "큐레이션본부", info: "큐레이션본부 전체 부서 및 협업 영역", type: "macro-zone digi-curation", isDesk: false, x: gridX(45) - 10, y: gridY(1) - 10, w: gridW(55) + 20, h: gridH(22) + 20, originalName: "큐레이션본부" });
+        spots.push({ name: "E마켓본부", info: "E마켓본부 전체 부서 영역", type: "macro-zone e-market", isDesk: false, x: gridX(65) - 10, y: gridY(29) - 10, w: gridW(30) + 20, h: gridH(15) + 20, originalName: "E마켓본부" });
+        spots.push({ name: "비즈니스솔루션본부", sub: "Curation & Biz Solution", info: "통합 영역", type: "macro-zone biz-solution", isDesk: false, x: gridX(1) - 10, y: gridY(51) - 10, w: gridW(80) + 20, h: gridH(22) + 20, originalName: "비즈니스솔루션본부" });
+        spots.push({ name: "회의실", sub: "Executive & Meeting Room Area", info: "대표이사 공간 및 중대형 주간 회의 전용 공간", type: "macro-zone executive-meeting", isDesk: false, x: gridX(102) - 10, y: gridY(1) - 10, w: gridW(5) + 20, h: gridH(22) + 20, originalName: "회의실" });
 
-        addDesk('유종훈', '팀장', '디지털큐레이션', 'executive', 22, 4, 2, 2, false);
-        addDesk('정아름', '파트장', '디지털큐레이션', 'executive', 22, 6, 1, 3, true);
-        addDesk('공석', '', '', 'executive', 23, 6, 1, 3, true); 
-        addDesk('이건석', '팀원', '디지털큐레이션', 'executive', 22, 9, 1, 3, true);
-        addDesk('공석', '', '', 'executive', 23, 9, 1, 3, true); 
-        addDesk('공석', '', '', 'executive', 22, 14, 1, 3, true);
-        addDesk('공석', '', '', 'executive', 23, 14, 1, 3, true);
-        addDesk('공석', '', '', 'executive', 22, 17, 1, 3, true);
-        addDesk('공석', '', '', 'executive', 23, 17, 1, 3, true);
-        addDesk('공석', '', '', 'executive', 22, 20, 1, 3, true);
-        addDesk('공석', '', '', 'executive', 23, 20, 1, 3, true);
+        // --- 상단 구역 인원들 (기존 데이터) ---
+        addDesk('유종훈', '팀장', '디지털큐레이션', 'executive', 49, 4, 2, 2, false);
+        addDesk('정아름', '파트장', '디지털큐레이션', 'executive', 49, 6, 1, 3, true);
+        addDesk('공석', '', '', 'executive', 50, 6, 1, 3, true); 
+        addDesk('이건석', '팀원', '디지털큐레이션', 'executive', 49, 9, 1, 3, true);
+        addDesk('공석', '', '', 'executive', 50, 9, 1, 3, true); 
+        addDesk('공석', '', '', 'executive', 49, 14, 1, 3, true);
+        addDesk('공석', '', '', 'executive', 50, 14, 1, 3, true);
+        addDesk('공석', '', '', 'executive', 49, 17, 1, 3, true);
+        addDesk('공석', '', '', 'executive', 50, 17, 1, 3, true);
+        addDesk('공석', '', '', 'executive', 49, 20, 1, 3, true);
+        addDesk('공석', '', '', 'executive', 50, 20, 1, 3, true);
 
-        addDesk('박종윤', '팀장', '식품/유아팀', 'GA', 26, 4, 2, 2, false);
-        addDesk('손진섭', '팀원', '식품/유아팀', 'GA', 26, 6, 1, 3, true);
-        addDesk('박미현B', '팀원', '식품/유아팀', 'GA', 27, 6, 1, 3, true);
-        addDesk('장수현', '팀원', '식품/유아팀', 'GA', 26, 9, 1, 3, true);
-        addDesk('김예원C', '팀원', '식품/유아팀', 'GA', 27, 9, 1, 3, true);
-        addDesk('윤다은', '팀원', '식품/유아팀', 'GA', 26, 14, 1, 3, true);
-        addDesk('황다솜', '팀원', '식품/유아팀', 'GA', 27, 14, 1, 3, true);
-        addDesk('장수현', '팀원', '식품/유아팀', 'GA', 26, 17, 1, 3, true);
-        addDesk('안소연', '팀원', '식품/유아팀', 'GA', 27, 17, 1, 3, true);
-        addDesk('김혜리', '팀원', '식품/유아팀', 'GA', 26, 20, 1, 3, true);
-        addDesk('공석', '', '', 'GA', 27, 20, 1, 3, true); 
+        addDesk('박종윤', '팀장', '식품/유아팀', 'GA', 54, 4, 2, 2, false);
+        addDesk('손진섭', '팀원', '식품/유아팀', 'GA', 54, 6, 1, 3, true);
+        addDesk('박미현B', '팀원', '식품/유아팀', 'GA', 55, 6, 1, 3, true);
+        addDesk('장수현', '팀원', '식품/유아팀', 'GA', 54, 9, 1, 3, true);
+        addDesk('김예원C', '팀원', '식품/유아팀', 'GA', 55, 9, 1, 3, true);
+        addDesk('윤다은', '팀원', '식품/유아팀', 'GA', 54, 14, 1, 3, true);
+        addDesk('황다솜', '팀원', '식품/유아팀', 'GA', 55, 14, 1, 3, true);
+        addDesk('장수현', '팀원', '식품/유아팀', 'GA', 54, 17, 1, 3, true);
+        addDesk('안소연', '팀원', '식품/유아팀', 'GA', 55, 17, 1, 3, true);
+        addDesk('김혜리', '팀원', '식품/유아팀', 'GA', 54, 20, 1, 3, true);
+        addDesk('공석', '', '', 'GA', 55, 20, 1, 3, true); 
 
-        addDesk('윤초희', '팀장', '생활/가구팀', 'food', 30, 4, 2, 2, false);
-        addDesk('나하율', '팀원', '생활/가구팀', 'food', 30, 6, 1, 3, true);
-        addDesk('유지수B', '팀원', '생활/가구팀', 'food', 31, 6, 1, 3, true);
-        addDesk('채유진', '팀원', '생활/가구팀', 'food', 30, 9, 1, 3, true);
-        addDesk('선미미', '팀원', '생활/가구팀', 'food', 31, 9, 1, 3, true);
-        addDesk('송가온', '팀원', '생활/가구팀', 'food', 30, 14, 1, 3, true);
-        addDesk('박유진A', '팀원', '생활/가구팀', 'food', 31, 14, 1, 3, true);
-        addDesk('이혜승', '팀원', '생활/가구팀', 'food', 30, 17, 1, 3, true);
-        addDesk('최은진', '팀원', '생활/가구팀', 'food', 31, 17, 1, 3, true);
-        addDesk('김민경', '팀원', '생활/가구팀', 'food', 30, 20, 1, 3, true);
-        addDesk('임혜선', '팀원', '생활/가구팀', 'food', 31, 20, 1, 3, true);
+        addDesk('윤초희', '팀장', '생활/가구팀', 'food', 59, 4, 2, 2, false);
+        addDesk('나하율', '팀원', '생활/가구팀', 'food', 59, 6, 1, 3, true);
+        addDesk('유지수B', '팀원', '생활/가구팀', 'food', 60, 6, 1, 3, true);
+        addDesk('채유진', '팀원', '생활/가구팀', 'food', 59, 9, 1, 3, true);
+        addDesk('선미미', '팀원', '생활/가구팀', 'food', 60, 9, 1, 3, true);
+        addDesk('송가온', '팀원', '생활/가구팀', 'food', 59, 14, 1, 3, true);
+        addDesk('박유진A', '팀원', '생활/가구팀', 'food', 60, 14, 1, 3, true);
+        addDesk('이혜승', '팀원', '생활/가구팀', 'food', 59, 17, 1, 3, true);
+        addDesk('최은진', '팀원', '생활/가구팀', 'food', 60, 17, 1, 3, true);
+        addDesk('김민경', '팀원', '생활/가구팀', 'food', 59, 20, 1, 3, true);
+        addDesk('임혜선', '팀원', '생활/가구팀', 'food', 60, 20, 1, 3, true);
 
-        addDesk('남수진', '팀장', '스포츠팀', 'living', 34, 4, 2, 2, false);
-        addDesk('김미령', '팀원', '스포츠팀', 'living', 34, 6, 1, 3, true);
-        addDesk('양지수', '팀원', '스포츠팀', 'living', 35, 6, 1, 3, true);
-        addDesk('신다연', '팀원', '스포츠팀', 'living', 34, 9, 1, 3, true);
-        addDesk('최서희', '팀원', '스포츠팀', 'living', 35, 9, 1, 3, true);
-        addDesk('김유리', '팀원', '스포츠팀', 'living', 34, 14, 1, 3, true);
-        addDesk('황가림', '팀원', '스포츠팀', 'living', 35, 14, 1, 3, true);
-        addDesk('최슬기', '팀원', '스포츠팀', 'living', 34, 17, 1, 3, true);
-        addDesk('이민성', '팀원', '스포츠팀', 'living', 35, 17, 1, 3, true);
+        addDesk('남수진', '팀장', '스포츠팀', 'living', 64, 4, 2, 2, false);
+        addDesk('김미령', '팀원', '스포츠팀', 'living', 64, 6, 1, 3, true);
+        addDesk('양지수', '팀원', '스포츠팀', 'living', 65, 6, 1, 3, true);
+        addDesk('신다연', '팀원', '스포츠팀', 'living', 64, 9, 1, 3, true);
+        addDesk('최서희', '팀원', '스포츠팀', 'living', 65, 9, 1, 3, true);
+        addDesk('김유리', '팀원', '스포츠팀', 'living', 64, 14, 1, 3, true);
+        addDesk('황가림', '팀원', '스포츠팀', 'living', 65, 14, 1, 3, true);
+        addDesk('최슬기', '팀원', '스포츠팀', 'living', 64, 17, 1, 3, true);
+        addDesk('이민성', '팀원', '스포츠팀', 'living', 65, 17, 1, 3, true);
 
-        addDesk('고상미', '팀장', '패션/뷰티팀', 'sports', 38, 4, 2, 2, false);
-        addDesk('곽연희', '팀원', '패션/뷰티팀', 'sports', 38, 6, 1, 3, true);
-        addDesk('임채두', '팀원', '패션/뷰티팀', 'sports', 39, 6, 1, 3, true);
-        addDesk('주해란', '팀원', '패션/뷰티팀', 'sports', 38, 9, 1, 3, true);
-        addDesk('양지혜', '팀원', '패션/뷰티팀', 'sports', 39, 9, 1, 3, true);
-        addDesk('유지수', '팀원', '패션/뷰티팀', 'sports', 38, 14, 1, 3, true);
-        addDesk('조혜민', '팀원', '패션/뷰티팀', 'sports', 38, 17, 1, 3, true);
-        addDesk('함수진', '팀원', '패션/뷰티팀', 'sports', 38, 20, 1, 3, true);
+        addDesk('고상미', '팀장', '패션/뷰티팀', 'sports', 69, 4, 2, 2, false);
+        addDesk('곽연희', '팀원', '패션/뷰티팀', 'sports', 69, 6, 1, 3, true);
+        addDesk('임채두', '팀원', '패션/뷰티팀', 'sports', 70, 6, 1, 3, true);
+        addDesk('주해란', '팀원', '패션/뷰티팀', 'sports', 69, 9, 1, 3, true);
+        addDesk('양지혜', '팀원', '패션/뷰티팀', 'sports', 70, 9, 1, 3, true);
+        addDesk('유지수', '팀원', '패션/뷰티팀', 'sports', 69, 14, 1, 3, true);
+        addDesk('조혜민', '팀원', '패션/뷰티팀', 'sports', 69, 17, 1, 3, true);
+        addDesk('함수진', '팀원', '패션/뷰티팀', 'sports', 69, 20, 1, 3, true);
 
-        addDesk('이일환', '팀장', '큐레이션본부장', 'executive', 42, 4, 2, 2, false);
-        addDesk('공석', '', '', 'executive', 42, 6, 1, 3, true);
-        addDesk('공석', '', '', 'executive', 43, 6, 1, 3, true);
-        addDesk('공석', '', '', 'executive', 42, 9, 1, 3, true);
-        addDesk('공석', '', '', 'executive', 43, 9, 1, 3, true);
+        addDesk('이일환', '팀장', '큐레이션본부장', 'executive', 74, 4, 2, 2, false);
+        addDesk('공석', '', '', 'executive', 74, 6, 1, 3, true);
+        addDesk('공석', '', '', 'executive', 75, 6, 1, 3, true);
+        addDesk('공석', '', '', 'executive', 74, 9, 1, 3, true);
+        addDesk('공석', '', '', 'executive', 75, 9, 1, 3, true);
 
-        addDesk('최은', '팀원', '데이터코어팀', 'fashion', 46, 6, 1, 3, true);
-        addDesk('채지현', '팀원', '데이터코어팀', 'fashion', 47, 6, 1, 3, true);
-        addDesk('안세미', '팀원', '데이터코어팀', 'fashion', 46, 9, 1, 3, true);
-        addDesk('조선미', '팀원', '데이터코어팀', 'fashion', 47, 9, 1, 3, true);
-        addDesk('정상모', '팀원', '데이터코어팀', 'fashion', 47, 17, 1, 3, true);
-        addDesk('동아리', '팀원', '데이터코어팀', 'fashion', 50, 17, 1, 3, true);
-        addDesk('심수연', '팀원', '데이터코어팀', 'fashion', 51, 17, 1, 3, true);
-        addDesk('김병효', '팀원', '데이터코어팀', 'fashion', 47, 20, 1, 3, true);
-        addDesk('이지혜E', '팀원', '데이터코어팀', 'fashion', 50, 20, 1, 3, true);
-        addDesk('강보영', '팀원', '데이터코어팀', 'fashion', 51, 20, 1, 3, true);
+        addDesk('최은', '팀원', '데이터코어팀', 'fashion', 79, 6, 1, 3, true);
+        addDesk('채지현', '팀원', '데이터코어팀', 'fashion', 80, 6, 1, 3, true);
+        addDesk('안세미', '팀원', '데이터코어팀', 'fashion', 79, 9, 1, 3, true);
+        addDesk('조선미', '팀원', '데이터코어팀', 'fashion', 80, 9, 1, 3, true);
+        addDesk('정상모', '팀원', '데이터코어팀', 'fashion', 80, 17, 1, 3, true);
+        addDesk('동아리', '팀원', '데이터코어팀', 'fashion', 84, 17, 1, 3, true);
+        addDesk('심수연', '팀원', '데이터코어팀', 'fashion', 85, 17, 1, 3, true);
+        addDesk('김병효', '팀원', '데이터코어팀', 'fashion', 80, 20, 1, 3, true);
+        addDesk('이지혜E', '팀원', '데이터코어팀', 'fashion', 84, 20, 1, 3, true);
+        addDesk('강보영', '팀원', '데이터코어팀', 'fashion', 85, 20, 1, 3, true);
 
-        addDesk('공석', '팀장', '데이터코어팀', 'datacore', 50, 4, 2, 2, false);
-        addDesk('김선빈', '임원', '데이터코어팀', 'datacore', 54, 4, 2, 2, false); 
-        addDesk('김수정D', '비서', '데이터코어팀', 'datacore', 58, 3, 1, 3, true);
-        addDesk('공석', '', '', 'datacore', 59, 3, 1, 3, true);
+        addDesk('공석', '팀장', '데이터코어팀', 'datacore', 84, 4, 2, 2, false);
+        addDesk('김선빈', '임원', '데이터코어팀', 'datacore', 89, 4, 2, 2, false); 
+        addDesk('김수정D', '비서', '데이터코어팀', 'datacore', 94, 3, 1, 3, true);
+        addDesk('공석', '', '', 'datacore', 95, 3, 1, 3, true);
 
-        addDesk('송지원', '팀원', '데이터코어팀', 'datacore', 50, 6, 1, 3, true);
-        addDesk('이예림A', '팀원', '데이터코어팀', 'datacore', 51, 6, 1, 3, true);
-        addDesk('정원국', '팀원', '데이터코어팀', 'datacore', 54, 6, 1, 3, true);
-        addDesk('임현정', '팀원', '데이터코어팀', 'datacore', 55, 6, 1, 3, true);
-        addDesk('김덕원', '팀원', '데이터코어팀', 'datacore', 58, 6, 1, 3, true);
-        addDesk('양은비', '팀원', '데이터코어팀', 'datacore', 59, 6, 1, 3, true);
+        addDesk('송지원', '팀원', '데이터코어팀', 'datacore', 84, 6, 1, 3, true);
+        addDesk('이예림A', '팀원', '데이터코어팀', 'datacore', 85, 6, 1, 3, true);
+        addDesk('정원국', '팀원', '데이터코어팀', 'datacore', 89, 6, 1, 3, true);
+        addDesk('임현정', '팀원', '데이터코어팀', 'datacore', 90, 6, 1, 3, true);
+        addDesk('김덕원', '팀원', '데이터코어팀', 'datacore', 94, 6, 1, 3, true);
+        addDesk('양은비', '팀원', '데이터코어팀', 'datacore', 95, 6, 1, 3, true);
         
-        addDesk('김보라B', '팀원', '데이터코어팀', 'datacore', 50, 9, 1, 3, true);
-        addDesk('손나린', '팀원', '데이터코어팀', 'datacore', 51, 9, 1, 3, true);
-        addDesk('박소영A', '팀원', '데이터코어팀', 'datacore', 54, 9, 1, 3, true);
-        addDesk('백다솜', '팀원', '데이터코어팀', 'datacore', 55, 9, 1, 3, true);
-        addDesk('이해성A', '팀원', '데이터코어팀', 'datacore', 58, 9, 1, 3, true);
-        addDesk('박윤정', '팀원', '데이터코어팀', 'datacore', 59, 9, 1, 3, true);
+        addDesk('김보라B', '팀원', '데이터코어팀', 'datacore', 84, 9, 1, 3, true);
+        addDesk('손나린', '팀원', '데이터코어팀', 'datacore', 85, 9, 1, 3, true);
+        addDesk('박소영A', '팀원', '데이터코어팀', 'datacore', 89, 9, 1, 3, true);
+        addDesk('백다솜', '팀원', '데이터코어팀', 'datacore', 90, 9, 1, 3, true);
+        addDesk('이해성A', '팀원', '데이터코어팀', 'datacore', 94, 9, 1, 3, true);
+        addDesk('박윤정', '팀원', '데이터코어팀', 'datacore', 95, 9, 1, 3, true);
         
-        addDesk('김선미', '팀원', '데이터코어팀', 'datacore', 50, 14, 1, 3, true);
-        addDesk('신지현', '팀원', '데이터코어팀', 'datacore', 51, 14, 1, 3, true);
-        addDesk('양민경', '팀원', '데이터코어팀', 'datacore', 54, 14, 1, 3, true);
-        addDesk('최지은', '팀원', '데이터코어팀', 'datacore', 55, 14, 1, 3, true);
-        addDesk('김유현', '팀원', '데이터코어팀', 'datacore', 58, 14, 1, 3, true);
-        addDesk('박정선', '팀원', '데이터코어팀', 'datacore', 59, 14, 1, 3, true);
+        addDesk('김선미', '팀원', '데이터코어팀', 'datacore', 84, 14, 1, 3, true);
+        addDesk('신지현', '팀원', '데이터코어팀', 'datacore', 85, 14, 1, 3, true);
+        addDesk('양민경', '팀원', '데이터코어팀', 'datacore', 89, 14, 1, 3, true);
+        addDesk('최지은', '팀원', '데이터코어팀', 'datacore', 90, 14, 1, 3, true);
+        addDesk('김유현', '팀원', '데이터코어팀', 'datacore', 94, 14, 1, 3, true);
+        addDesk('박정선', '팀원', '데이터코어팀', 'datacore', 95, 14, 1, 3, true);
         
-        addDesk('백근호', '팀원', '데이터코어팀', 'datacore', 54, 17, 1, 3, true);
-        addDesk('김지원B', '팀원', '데이터코어팀', 'datacore', 55, 17, 1, 3, true);
-        addDesk('이세연', '팀원', '데이터코어팀', 'datacore', 58, 17, 1, 3, true);
-        addDesk('이윤경', '팀원', '데이터코어팀', 'datacore', 59, 17, 1, 3, true);
+        addDesk('백근호', '팀원', '데이터코어팀', 'datacore', 89, 17, 1, 3, true);
+        addDesk('김지원B', '팀원', '데이터코어팀', 'datacore', 90, 17, 1, 3, true);
+        addDesk('이세연', '팀원', '데이터코어팀', 'datacore', 94, 17, 1, 3, true);
+        addDesk('이윤경', '팀원', '데이터코어팀', 'datacore', 95, 17, 1, 3, true);
         
-        addDesk('장지형', '팀원', '데이터코어팀', 'datacore', 54, 20, 1, 3, true);
-        addDesk('정수지', '팀원', '데이터코어팀', 'datacore', 55, 20, 1, 3, true);
-        addDesk('정다운C', '팀원', '데이터코어팀', 'datacore', 58, 20, 1, 3, true);
-        addDesk('임진희', '팀원', '데이터코어팀', 'datacore', 59, 20, 1, 3, true);
+        addDesk('장지형', '팀원', '데이터코어팀', 'datacore', 89, 20, 1, 3, true);
+        addDesk('정수지', '팀원', '데이터코어팀', 'datacore', 90, 20, 1, 3, true);
+        addDesk('정다운C', '팀원', '데이터코어팀', 'datacore', 94, 20, 1, 3, true);
+        addDesk('임진희', '팀원', '데이터코어팀', 'datacore', 95, 20, 1, 3, true);
 
-        addSpecialArea('김범수 대표', '대표이사', '대표이사 업무 공간', 'seat', 'executive-zone', 62, 3, 4, 10);
-        addSpecialArea('A1201', '회의실', '대형 주간 회의 공간', 'meeting', 'A1201', 62, 14, 4, 10);
-        addSpecialArea('OA존', '비품/사무기기', '복합기 및 공용 정수기 공간', 'facility', 'OA', 42, 14, 2, 5); 
-        addSpecialArea('우편, 비상약품 외', '공용비품', '사내 우편 및 비상 약 상자', 'facility', 'OA', 19, 6, 2, 3);
-        
-        addSpecialArea('출입문', 'Entrance', '상단 출입문', 'door', 'exit', 15, 24, 7, 3);
+
+        // =========================================================================
+        // [NEW] E마켓본부 구역 (가로로 확 밀려남)
+        // =========================================================================
+        addSpecialArea('CS room', '고객지원', 'CS 전용 공간', 'facility', 'cs-room-container', 66, 30, 7, 7);
+        addDesk('김선빈', '팀원', 'CS room', 'living', 67, 32, 2, 2, false);
+        addDesk('김덕원', '팀원', 'CS room', 'living', 69, 32, 2, 2, false);
+        addDesk('배민지', '팀원', 'CS room', 'fashion', 67, 34, 2, 2, false);
+        addDesk('이지은', '팀원', 'CS room', 'fashion', 69, 34, 2, 2, false);
+
+        addSpecialArea('서버실', '', '서버실 (통제구역)', 'facility', 'OA', 66, 38, 7, 6);
+
+        addDesk('망분리PC', '', 'PC사업2팀', 'living', 77, 33, 1, 3, true);
+        addDesk('홍석민', '팀원', 'PC사업2팀', 'living', 78, 33, 1, 3, true);
+        addDesk('김지용', '팀원', 'PC사업2팀', 'living', 77, 36, 1, 3, true);
+        addDesk('정우진A', '팀원', 'PC사업2팀', 'living', 78, 36, 1, 3, true);
+        addDesk('전준환', '팀원', 'PC사업2팀', 'living', 77, 39, 1, 3, true);
+        addDesk('박동수', '팀원', 'PC사업2팀', 'living', 78, 39, 1, 3, true);
+        addDesk('김태빈', '팀장', 'PC사업2팀', 'living', 77, 42, 2, 2, false); 
+
+        addDesk('이진균', '팀원', 'PC사업1팀', 'food', 80, 33, 1, 3, true);
+        addDesk('홍연우', '팀원', 'PC사업1팀', 'food', 81, 33, 1, 3, true);
+        addDesk('김태준', '팀원', 'PC사업1팀', 'food', 80, 36, 1, 3, true);
+        addDesk('김민식', '팀원', 'PC사업1팀', 'food', 81, 36, 1, 3, true);
+        addDesk('윤종훈', '팀원', 'PC사업1팀', 'food', 80, 39, 1, 3, true);
+        addDesk('박주현', '팀원', 'PC사업1팀', 'food', 81, 39, 1, 3, true);
+        addDesk('임승현', '팀장', 'PC사업1팀', 'food', 80, 42, 2, 2, false);
+
+        addDesk('심성욱', '팀원', 'PC사업3팀', 'GA', 83, 33, 1, 3, true);
+        addDesk('최승헌', '팀원', 'PC사업3팀', 'GA', 84, 33, 1, 3, true);
+        addDesk('박성호B', '팀원', 'PC사업3팀', 'GA', 83, 36, 1, 3, true);
+        addDesk('김성실', '팀원', 'PC사업3팀', 'GA', 84, 36, 1, 3, true);
+        addDesk('한규민', '팀원', 'PC사업3팀', 'GA', 83, 39, 1, 3, true);
+        addDesk('김한성', '팀원', 'PC사업3팀', 'GA', 84, 39, 1, 3, true);
+        addDesk('최상호', '팀장', 'PC사업3팀', 'GA', 83, 42, 2, 2, false);
+
+        addDesk('박정환', '팀원', '인프라사업팀', 'datacore', 86, 33, 1, 3, true);
+        addDesk('최재성', '팀원', '인프라사업팀', 'datacore', 87, 33, 1, 3, true);
+        addDesk('전주희', '팀원', '인프라사업팀', 'datacore', 86, 36, 1, 3, true);
+        addDesk('양승주', '팀원', '인프라사업팀', 'datacore', 87, 36, 1, 3, true);
+        addDesk('용재순', '팀원', '인프라사업팀', 'datacore', 86, 39, 1, 3, true);
+        addDesk('지민태', '팀원', '인프라사업팀', 'datacore', 87, 39, 1, 3, true);
+        addDesk('문지훈', '팀장', '인프라사업팀', 'datacore', 86, 42, 2, 2, false);
+
+        addDesk('류원종', '팀원', '인프라사업팀', 'datacore', 89, 36, 1, 3, true);
+        addDesk('유승훈', '팀원', '인프라사업팀', 'datacore', 89, 39, 1, 3, true);
+
+        // 우측 끝단 공용공간 (OA, 임원실, Test room)
+        addSpecialArea('OA', '(복합기, 정수기)', 'OA 공간', 'facility', 'OA', 91, 30, 3, 5);
+        addSpecialArea('임원실', '강명종 상무', '상무실', 'seat', 'executive-zone', 102, 30, 6, 5);
+        addSpecialArea('Test room', '', '테스트 룸', 'meeting', 'A1201', 102, 36, 6, 8);
+
+
+        // =========================================================================
+        // [NEW] 비즈니스솔루션본부 및 18층 하단 구역 도면 매핑
+        // =========================================================================
+
+        // [하단 구역 1] 디지털큐레이션본부 연장(하부 좌측)
+        addDesk('김민주F', '본부장', '큐레이션본부', 'GA', 3, 53, 2, 2, false);
+        addDesk('김도희', '팀원', '공구/자동차팀', 'GA', 3, 55, 1, 3, true);
+        addDesk(' ', '팀원', '공구/자동차팀', ' ', 4, 55, 1, 3, true);
+        addDesk('주민수', '팀원', '공구/자동차팀', 'GA', 3, 58, 1, 3, true);
+        addDesk('김예원B', '팀원', '공구/자동차팀', 'GA', 4, 58, 1, 3, true);
+
+        addDesk('문가연', '팀원', '공구/자동차팀', 'GA', 3, 65, 1, 3, true);
+        addDesk('이상원', '팀원', '공구/자동차팀', 'GA', 4, 65, 1, 3, true);
+        addDesk('정다예', '팀원', '공구/자동차팀', 'GA', 3, 68, 1, 3, true);
+        addDesk('김영선', '팀원', '공구/자동차팀', 'GA', 4, 68, 1, 3, true);
+        addDesk('이상곤', '팀장', '공구/자동차팀', 'GA', 3, 71, 2, 2, false);
+
+        addDesk('김건수', '팀원', '디지털/영상팀', 'food', 7, 65, 1, 3, true);
+        addDesk('강민지C', '팀원', '디지털/영상팀', 'food', 8, 65, 1, 3, true);
+        addDesk('박성민B', '팀원', '디지털/영상팀', 'food', 7, 68, 1, 3, true);
+        addDesk('조광원', '팀원', '디지털/영상팀', 'food', 8, 68, 1, 3, true);
+        addDesk('김우중', '팀장', '디지털/영상팀', 'food', 7, 71, 2, 2, false);
+
+        addDesk('박정훈', '팀장', '스토어사업팀', 'fashion', 7, 53, 1, 3, true);
+        addDesk('옹진아', '팀원', '디지털/영상팀', 'fashion', 8, 53, 1, 3, true);
+        addDesk('김혜선', '팀원', '컴퓨터팀', 'fashion', 7, 56, 1, 3, true);
+        addDesk('김은석', '팀원', '디지털/영상팀', 'fashion', 8, 56, 1, 3, true);
+        addDesk(' ', '팀원', '컴퓨터팀', ' ', 7, 59, 1, 3, true);
+        addDesk('송진우', '팀원', '디지털/영상팀', 'fashion', 8, 59, 1, 3, true);
+
+        addDesk(' ', '팀원', '컴퓨터팀', '', 11, 53, 1, 3, true);
+        addDesk('안태우', '팀원', '컴퓨터팀', 'fashion', 12, 53, 1, 3, true);
+        addDesk(' ', '팀원', '컴퓨터팀', '', 11, 56, 1, 3, true);
+        addDesk('최형모', '팀원', '컴퓨터팀', 'fashion', 12, 56, 1, 3, true);
+        addDesk(' ', '팀원', '컴퓨터팀', '', 11, 59, 1, 3, true);
+        addDesk('조은영', '팀원', '컴퓨터팀', 'fashion', 12, 59, 1, 3, true);
+
+        addSpecialArea('복합기', '', '공용 복합기', 'facility', 'OA', 11, 68, 2, 4);
+
+        addDesk('양혜리', '팀원', '컴퓨터팀', 'fashion', 15, 53, 1, 3, true);
+        addDesk('오슬기A', '팀원', '가전팀', 'sports', 16, 53, 1, 3, true);
+        addDesk('김병찬', '팀원', '컴퓨터팀', 'fashion', 15, 56, 1, 3, true);
+        addDesk('김자윤', '팀원', '가전팀', 'sports', 16, 56, 1, 3, true);
+        addDesk('김민주E', '팀원', '컴퓨터팀', 'fashion', 15, 59, 1, 3, true);
+        addDesk('정하예', '팀원', '가전팀', 'sports', 16, 59, 1, 3, true);
+
+        addDesk('박상필', '팀원', '컴퓨터팀', 'fashion', 15, 65, 1, 3, true);
+        addDesk('엄상식', '팀원', '컴퓨터팀', 'fashion', 16, 65, 1, 3, true);
+        addDesk('백희우', '팀원', '컴퓨터팀', 'fashion', 15, 68, 1, 3, true);
+        addDesk('박민철', '팀원', '컴퓨터팀', 'fashion', 16, 68, 1, 3, true);
+        addDesk('박지훈', '팀장', '컴퓨터팀', 'fashion', 15, 71, 2, 2, false);
+
+        addDesk('김수연', '팀원', '가전팀', 'sports', 19, 53, 1, 3, true);
+        addDesk(' ', '팀원', '가전팀', ' ', 20, 53, 1, 3, true);
+        addDesk('김연주', '팀원', '가전팀', 'sports', 19, 56, 1, 3, true);
+        addDesk(' ', '팀원', '가전팀', ' ', 20, 56, 1, 3, true);
+        addDesk('김다솜', '팀원', '가전팀', 'sports', 19, 59, 1, 3, true);
+        addDesk(' ', '팀원', '가전팀', '', 20, 59, 1, 3, true);
+
+        addDesk('윤보경', '팀원', '가전팀', 'sports', 19, 65, 1, 3, true);
+        addDesk('조민정', '팀원', '가전팀', 'sports', 20, 65, 1, 3, true);
+        addDesk('김다솔', '팀원', '가전팀', 'sports', 19, 68, 1, 3, true);
+        addDesk('고유경', '팀원', '가전팀', 'sports', 20, 68, 1, 3, true);
+        addDesk('김동환', '팀장', '가전팀', 'sports', 19, 71, 2, 2, false);
+
+        addDesk('장지은(CS)', '팀원', '자동차사업팀', 'living', 23, 53, 1, 3, true);
+        addDesk(' ', '팀원', '자동차사업팀', 'living', 24, 53, 1, 3, true);
+        addDesk(' ', '팀원', '자동차사업팀', 'living', 23, 56, 1, 3, true);
+        addDesk(' ', '팀원', '자동차사업팀', 'living', 24, 56, 1, 3, true);
+        addDesk('김나형', '팀원', '자동차사업팀', 'living', 23, 59, 1, 3, true);
+        addDesk('박대웅', '팀원', '자동차사업팀', 'living', 24, 59, 1, 3, true);
+
+        addDesk('여인서', '팀원', '자동차사업팀', 'living', 23, 65, 1, 3, true);
+        addDesk('전태중', '팀원', '자동차사업팀', 'living', 24, 65, 1, 3, true);
+        addDesk('박난희', '팀원', '자동차사업팀', 'living', 23, 68, 1, 3, true);
+        addDesk('김맑음이', '팀원', '자동차사업팀', 'living', 24, 68, 1, 3, true);
+        addDesk('김경식', '팀장', '자동차사업팀', 'living', 23, 71, 2, 2, false);
+
+        addDesk(' ', '팀원', '자동차사업팀', 'living', 27, 53, 1, 3, true);
+        addDesk('김혜빈', '팀원', '자동차사업팀', 'living', 28, 53, 1, 3, true);
+        addDesk('이영진', '팀원', '자동차사업팀', 'living', 27, 56, 1, 3, true);
+        addDesk('한지원', '팀원', '자동차사업팀', 'living', 28, 56, 1, 3, true);
+        addDesk('전수민', '팀원', '자동차사업팀', 'living', 27, 59, 1, 3, true);
+        addDesk('이아람', '팀원', '자동차사업팀', 'living', 28, 59, 1, 3, true);
+
+        addDesk(' ', '팀원', '제휴사업팀', 'GA', 27, 65, 1, 3, true);
+        addDesk('강효선', '팀원', '제휴사업팀', 'GA', 28, 65, 1, 3, true);
+        addDesk('고영빈', '팀원', '제휴사업팀', 'GA', 27, 68, 1, 3, true);
+        addDesk('신용길', '팀원', '제휴사업팀', 'GA', 28, 68, 1, 3, true);
+        addDesk('주태준', '팀장', '제휴사업팀', 'GA', 27, 71, 2, 2, false);
+
+        // 공용/회의실
+        addSpecialArea('탕비실', '', '공용 회의실', 'meeting', 'A1201', 31, 53, 3, 9);
+        addSpecialArea('공용창고', '', '비품 창고', 'meeting', 'OA', 37, 65, 8, 8);
+        addSpecialArea('B803', '회의실', 'B803 회의실', 'meeting', 'B1201', 31, 65, 5, 8);
+        addSpecialArea('B801', '회의실', 'B801 회의실', 'meeting', 'B801', 40, 53, 5, 9);
+        addSpecialArea('B1201', '회의실', 'B1201 회의실', 'meeting', 'A1201', 46, 53, 5, 9);
+        addSpecialArea('B802', '회의실', 'B802 회의실', 'meeting', 'B802', 46, 65, 5, 8);
+
+        // 광고성과영업팀
+        addDesk('박빛나', '팀원', '광고성과영업팀', 'food', 53, 53, 1, 3, true);
+        addDesk('백혜미', '팀원', '광고성과영업팀', 'food', 53, 56, 1, 3, true);
+        addDesk('유진주', '팀원', '광고성과영업팀', 'food', 53, 59, 1, 3, true);
+        addDesk('이혜진', '팀원', '광고성과영업팀', 'food', 58, 53, 1, 3, true);
+        addDesk('정윤하', '팀원', '광고성과영업팀', 'food', 58, 56, 1, 3, true);
+        addDesk('양슬기', '팀원', '광고성과영업팀', 'food', 58, 59, 1, 3, true);
+        addDesk('송하슬', '팀원', '광고성과영업팀', 'food', 59, 53, 1, 3, true);
+        addDesk('이효정', '팀원', '광고성과영업팀', 'food', 59, 56, 1, 3, true);
+        addDesk('김슬기', '팀원', '광고성과영업팀', 'food', 59, 59, 1, 3, true);
+
+        addDesk('전가연', '팀장', '광고성과영업팀', 'food', 64, 53, 2, 2, false);
+        addDesk('남궁윤', '팀원', '광고성과영업팀', 'food', 64, 55, 1, 3, true);
+        addDesk('이주', '팀원', '광고성과영업팀', 'food', 65, 55, 1, 3, true);
+        addDesk('김이온', '팀원', '광고성과영업팀', 'food', 64, 58, 1, 3, true);
+        addDesk('한혜진', '팀원', '광고성과영업팀', 'food', 65, 58, 1, 3, true);
+
+        // 자동차사업팀
+        addDesk('김경식', '팀장', '자동차사업팀', 'living', 69, 53, 2, 2, false);
+        addDesk('김맑음이', '팀원', '자동차사업팀', 'living', 69, 55, 1, 3, true);
+        addDesk('박난희', '팀원', '자동차사업팀', 'living', 70, 55, 1, 3, true);
+        addDesk('김나형', '팀원', '자동차사업팀', 'living', 69, 58, 1, 3, true);
+        addDesk('여인서', '팀원', '자동차사업팀', 'living', 70, 58, 1, 3, true);
+
+        // 광고영업팀
+        addDesk('우재윤', '팀원', '광고영업팀', 'GA', 58, 65, 1, 3, true);
+        addDesk('나애진', '팀원', '광고영업팀', 'GA', 59, 65, 1, 3, true);
+        addDesk('윤선학', '팀원', '광고영업팀', 'GA', 58, 68, 1, 3, true);
+        addDesk('김미형', '팀원', '광고영업팀', 'GA', 59, 68, 1, 3, true);
+	addDesk('정지수', '팀원', '광고영업팀', 'GA', 63, 65, 1, 3, true);
+        addDesk('이윤정', '팀원', '광고영업팀', 'GA', 64, 65, 1, 3, true);
+        addDesk('정대무', '팀원', '광고영업팀', 'GA', 63, 68, 1, 3, true);
+        addDesk('김준혁', '팀원', '광고영업팀', 'GA', 64, 68, 1, 3, true);
+        addDesk('정경모', '팀원', '광고영업팀', 'GA', 63, 71, 2, 2, false);
+
+        // 광고네트워크전략팀
+	addDesk('망분리PC', '팀원', '광고영업팀', 'fashion', 69, 66, 1, 3, true);
+        addDesk('유지선', '팀원', '광고영업팀', 'fashion', 70, 66, 1, 3, true);
+        addDesk(' ', '팀원', '광고영업팀', 'fashion', 69, 69, 1, 3, true);
+        addDesk('김경철', '팀원', '광고영업팀', 'fashion', 70, 69, 1, 3, true);
+        addDesk('박성범', '본부장', '비즈니스솔루션본부', 'fashion', 69, 71, 2, 2, false);
+
+        // -------------------------------------------------------------------------
+        // 출입문 위치 및 기타 공용 시설들 (기존 데이터 유지)
+        // -------------------------------------------------------------------------
+        addSpecialArea('출입문', 'Entrance', '하단 통합 출입문', 'door', 'top-entrance', 35.5, 49.5, 3, 3);
+        addSpecialArea('김범수 대표', '사업대표', '대표이사 업무 공간', 'seat', 'executive-zone', 102, 3, 4, 10);
+        addSpecialArea('A1201', '회의실', '대형 주간 회의 공간', 'meeting', 'A1201', 102, 14, 4, 10);
+        addSpecialArea('우편, 비상약품 외', '공용비품', '사내 우편 및 비상 약 상자', 'facility', 'OA', 46, 6, 2, 3);
         
         addSpecialArea('엘리베이터', 'Elevator', '승강기 홀 1', 'facility', 'elevator', 8, 30, 6, 15);
-        addSpecialArea('엘리베이터', 'Elevator', '승강기 홀 2', 'facility', 'elevator', 20, 30, 6, 15);
-        
-        addSpecialArea('출입문', 'Entrance', 'E마켓본부 출입문', 'door', 'exit', 38, 25, 7, 3);
-        addSpecialArea('출입문', 'Entrance', '하단 통합 출입문', 'door', 'exit', 15, 47, 7, 3);
+        addSpecialArea('엘리베이터', 'Elevator', '승강기 홀 2', 'facility', 'elevator', 46, 30, 6, 15);
 
-        addSpecialArea("비즈니스 1/2팀", "이몽룡 외 25명", "비즈니스 지원 파트", "seat", "executive-zone", 2, 6, 8, 8);
-        addSpecialArea("회의실 A", "8인 / 모니터", "중형 회의실", "meeting", "A1201", 12, 6, 5, 7);
-        addSpecialArea("회의실 B", "6인 / 화상회의", "소규모 회의 전용", "meeting", "A1201", 12, 14, 5, 7);
-        addSpecialArea("18F 라운지", "휴게공간 및 커피", "전직원 휴식공간", "common", "OA", 2, 15, 8, 6);
+        addSpecialArea('OA존', '(복합기, 정수기 외)', '복합기 및 공용 정수기 공간', 'facility', 'OA', 74, 12, 4, 8); 
+        
+        addSpecialArea('출입문', 'Entrance', '큐레이션 출입문', 'door', 'top-entrance', 74, 21.5, 3, 3);
+        addSpecialArea('출입문', 'Entrance', 'E마켓 출입문', 'door', 'top-entrance', 74, 27, 3, 3);
+        addSpecialArea('출입문', 'Entrance', '라운지 출입문', 'door', 'top-entrance', 35.5, 21.5, 3, 3);
+
+        // --- 라운지 구역 (HTML 도면 삽입 형태) ---
+        spots.push({
+            name: "라운지", sub: "18F 메인 라운지", info: "전직원 휴식공간 및 카페테리아", type: "common", customClass: "lounge-zone",
+            x: gridX(2), y: gridY(2), w: gridW(27), h: gridH(19), originalName: "라운지",
+            html: `
+                <div class="table-rect" style="position:absolute; bottom:56px; left:40px; width:450px; height:50px;">
+                    <div style="position:absolute; top:-22px; width:100%; display:flex; justify-content:space-evenly;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                    <div style="position:absolute; bottom:-22px; width:100%; display:flex; justify-content:space-evenly;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                </div>
+                <div class="table-rect" style="position:absolute; top:50%; right:760px; transform:translateY(-50%); width:50px; height:168px;">
+                    <div style="position:absolute; left:-22px; height:100%; display:flex; flex-direction:column; justify-content:space-evenly;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                    <div style="position:absolute; right:-22px; height:100%; display:flex; flex-direction:column; justify-content:space-evenly;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                </div>
+                <div class="table-rect" style="position:absolute; top:50%; right:520px; transform:translateY(-50%); width:50px; height:168px;">
+                    <div style="position:absolute; left:-22px; height:100%; display:flex; flex-direction:column; justify-content:space-evenly;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                    <div style="position:absolute; right:-22px; height:100%; display:flex; flex-direction:column; justify-content:space-evenly;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                </div>
+                <div class="table-rect" style="position:absolute; top:50%; right:280px; transform:translateY(-50%); width:50px; height:168px;">
+                    <div style="position:absolute; left:-22px; height:100%; display:flex; flex-direction:column; justify-content:space-evenly;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                    <div style="position:absolute; right:-22px; height:100%; display:flex; flex-direction:column; justify-content:space-evenly;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                </div>
+                <div class="table-rect" style="position:absolute; top:50%; right:40px; transform:translateY(-50%); width:50px; height:168px;">
+                    <div style="position:absolute; left:-22px; height:100%; display:flex; flex-direction:column; justify-content:space-evenly;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                    <div style="position:absolute; right:-22px; height:100%; display:flex; flex-direction:column; justify-content:space-evenly;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                </div>
+                <div style="position:absolute; top:56px; right:56px; display:grid; grid-template-columns: repeat(4, 1fr); gap:60px;">
+                    <div class="table-round" style="width:56px; height:56px;"><div class="chair-round" style="top:-16px; left:20px;"></div><div class="chair-round" style="bottom:-16px; left:20px;"></div><div class="chair-round" style="left:-16px; top:20px;"></div><div class="chair-round" style="right:-16px; top:20px;"></div></div>
+                    <div class="table-round" style="width:56px; height:56px;"><div class="chair-round" style="top:-16px; left:20px;"></div><div class="chair-round" style="bottom:-16px; left:20px;"></div><div class="chair-round" style="left:-16px; top:20px;"></div><div class="chair-round" style="right:-16px; top:20px;"></div></div>
+                    <div class="table-round" style="width:56px; height:56px;"><div class="chair-round" style="top:-16px; left:20px;"></div><div class="chair-round" style="bottom:-16px; left:20px;"></div><div class="chair-round" style="left:-16px; top:20px;"></div><div class="chair-round" style="right:-16px; top:20px;"></div></div>
+                    <div class="table-round" style="width:56px; height:56px;"><div class="chair-round" style="top:-16px; left:20px;"></div><div class="chair-round" style="bottom:-16px; left:20px;"></div><div class="chair-round" style="left:-16px; top:20px;"></div><div class="chair-round" style="right:-16px; top:20px;"></div></div>
+                    <div class="table-round" style="width:56px; height:56px;"><div class="chair-round" style="top:-16px; left:20px;"></div><div class="chair-round" style="bottom:-16px; left:20px;"></div><div class="chair-round" style="left:-16px; top:20px;"></div><div class="chair-round" style="right:-16px; top:20px;"></div></div>
+                    <div class="table-round" style="width:56px; height:56px;"><div class="chair-round" style="top:-16px; left:20px;"></div><div class="chair-round" style="bottom:-16px; left:20px;"></div><div class="chair-round" style="left:-16px; top:20px;"></div><div class="chair-round" style="right:-16px; top:20px;"></div></div>
+                    <div class="table-round" style="width:56px; height:56px;"><div class="chair-round" style="top:-16px; left:20px;"></div><div class="chair-round" style="bottom:-16px; left:20px;"></div><div class="chair-round" style="left:-16px; top:20px;"></div><div class="chair-round" style="right:-16px; top:20px;"></div></div>
+                    <div class="table-round" style="width:56px; height:56px;"><div class="chair-round" style="top:-16px; left:20px;"></div><div class="chair-round" style="bottom:-16px; left:20px;"></div><div class="chair-round" style="left:-16px; top:20px;"></div><div class="chair-round" style="right:-16px; top:20px;"></div></div>
+                </div>
+            `
+        });
+
+        // --- 대회의실 ---
+        spots.push({
+            name: "Conference room", sub: "대회의실", info: "대형 주간 회의", type: "meeting", customClass: "conf-room",
+            x: gridX(31) + 10, y: gridY(2), w: gridW(5), h: gridH(19), originalName: "Conference room",
+            html: `
+                <div class="conf-inner-table">
+                    <div class="chair" style="position:absolute; top:-24px; left:50%; transform:translateX(-50%);"></div>
+                    <div class="chair" style="position:absolute; bottom:-24px; left:50%; transform:translateX(-50%);"></div>
+                    <div style="position:absolute; left:-24px; height:100%; display:flex; flex-direction:column; justify-content:space-evenly; padding: 14px 0;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                    <div style="position:absolute; right:-24px; height:100%; display:flex; flex-direction:column; justify-content:space-evenly; padding: 14px 0;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                </div>
+                <div class="conf-text">Conference<br>room</div>
+            `
+        });
+
+        function addSmallRoomHtml(id, c, r, cw, ch, isBottomLabel) {
+            spots.push({
+                name: id, sub: "소회의실", info: "4~6인 회의 전용", type: "meeting", customClass: "small-room" + (isBottomLabel ? " bottom-label" : ""),
+                x: gridX(c)+5, y: gridY(r), w: gridW(cw)-10, h: gridH(ch), originalName: id,
+                html: `
+                    <span class="room-label">${id}</span>
+                    <div class="small-table">
+                        <div style="position:absolute; left:-22px; height:100%; display:flex; flex-direction:column; justify-content:space-evenly;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                        <div style="position:absolute; right:-22px; height:100%; display:flex; flex-direction:column; justify-content:space-evenly;"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div>
+                    </div>
+                `
+            });
+        }
+        
+        // 소회의실
+        addSmallRoomHtml("A804", 38, 2, 2, 9, false);
+        addSmallRoomHtml("A805", 40, 2, 2, 9, false);
+        addSmallRoomHtml("A806", 42, 2, 2, 9, false);
+        addSmallRoomHtml("A801", 38, 12, 2, 9, true);
+        addSmallRoomHtml("A802", 40, 12, 2, 9, true);
+        addSmallRoomHtml("A803", 42, 12, 2, 9, true);
 
         return spots;
       }
 
       return {
         "가산DK오피스": {
-          "18F": { desc: "디지털큐레이션, E마켓, 비즈니스솔루션본부 통합", categories: ["디지털큐레이션", "E마켓본부", "비즈니스솔루션", "A1201", "휴게공간"], width: 2400, height: 2000, spots: createGasan18Data() },
+          "18F": { desc: "디지털큐레이션, E마켓, 비즈니스솔루션본부 통합", categories: ["디지털큐레이션", "E마켓본부", "비즈니스솔루션", "자동차사업팀", "광고영업팀"], width: 6400, height: 3800, spots: createGasan18Data() },
           "17F": {
             desc: "GA팀(총무/인사) · 대형 라운지 · 자판기 · 회의실", categories: ["GA팀", "라운지", "자판기", "회의실 C"], width: 1200, height: 800,
             spots: [
@@ -1066,13 +1379,17 @@
         spotEl.style.width = spot.w + "px";
         spotEl.style.height = spot.h + "px";
 
-        var nameEl = document.createElement("strong");
-        nameEl.textContent = spot.name;
-        var subEl = document.createElement("span");
-        subEl.textContent = spot.sub;
+        if (spot.html) {
+            spotEl.innerHTML = spot.html;
+        } else {
+            var nameEl = document.createElement("strong");
+            nameEl.textContent = spot.name;
+            var subEl = document.createElement("span");
+            subEl.textContent = spot.sub;
 
-        spotEl.appendChild(nameEl);
-        spotEl.appendChild(subEl);
+            spotEl.appendChild(nameEl);
+            spotEl.appendChild(subEl);
+        }
         
         // 클릭 및 더블클릭 이벤트 처리
         spotEl.addEventListener("click", function () {
@@ -1197,9 +1514,14 @@
       gridLayer.style.pointerEvents = "none";
       gridLayer.style.zIndex = "999";
 
-      for(let r = 1; r <= 80; r++) {
+      // 현재 선택된 층이 18F면 확대된 사이즈를, 그 외에는 기본 사이즈를 적용
+      let cellWidth = currentFloor === "18F" ? 56 : 34;
+      let cellHeight = currentFloor === "18F" ? 42 : 26;
+
+      // 넓어진 맵을 커버하기 위해 100줄까지 그림
+      for(let r = 1; r <= 100; r++) {
           let line = document.createElement("div");
-          let yPos = 50 + (r - 1) * 26;
+          let yPos = 50 + (r - 1) * cellHeight;
           line.style.position = "absolute";
           line.style.top = yPos + "px";
           line.style.left = "0";
@@ -1219,9 +1541,10 @@
           gridLayer.appendChild(label);
       }
 
-      for(let c = 1; c <= 70; c++) {
+      // 맵이 넓어졌으므로 그리드 선을 최대 120칸까지 그립니다.
+      for(let c = 1; c <= 120; c++) {
           let line = document.createElement("div");
-          let xPos = 50 + (c - 1) * 34;
+          let xPos = 50 + (c - 1) * cellWidth;
           line.style.position = "absolute";
           line.style.left = xPos + "px";
           line.style.top = "0";
@@ -1339,9 +1662,9 @@
       hideInfo(); removeHighlights();
     }
 
-    function searchGlobalMap() {
-      var keyword = elements.globalSearchInput.value.trim().toLowerCase();
+    function executeGlobalSearch(keyword) {
       elements.globalEmptyMsg.style.display = "none";
+      elements.emptyMsg.style.display = "none";
       if (!keyword || !officeData) return;
 
       var foundOffice = null; var foundFloor = null;
@@ -1364,10 +1687,15 @@
 
       if (foundOffice) {
         showOffice(foundOffice); changeFloor(foundFloor);
-        elements.searchInput.value = elements.globalSearchInput.value;
+        elements.searchInput.value = keyword;
+        elements.globalSearchInput.value = keyword;
         searchOfficeMap();
       } else {
-        elements.globalEmptyMsg.style.display = "block";
+        if (elements.homeView.style.display === "block") {
+          elements.globalEmptyMsg.style.display = "block";
+        } else {
+          elements.emptyMsg.style.display = "block";
+        }
       }
     }
 
@@ -1505,11 +1833,11 @@
         if(event.target.value) showOffice(event.target.value);
       });
 
-      elements.searchButton.addEventListener("click", searchOfficeMap);
-      elements.searchInput.addEventListener("keydown", function (event) { if (event.key === "Enter") searchOfficeMap(); });
+      elements.searchButton.addEventListener("click", function() { executeGlobalSearch(elements.searchInput.value.trim().toLowerCase()); });
+      elements.searchInput.addEventListener("keydown", function (event) { if (event.key === "Enter") executeGlobalSearch(elements.searchInput.value.trim().toLowerCase()); });
 
-      elements.globalSearchButton.addEventListener("click", searchGlobalMap);
-      elements.globalSearchInput.addEventListener("keydown", function (event) { if (event.key === "Enter") searchGlobalMap(); });
+      elements.globalSearchButton.addEventListener("click", function() { executeGlobalSearch(elements.globalSearchInput.value.trim().toLowerCase()); });
+      elements.globalSearchInput.addEventListener("keydown", function (event) { if (event.key === "Enter") executeGlobalSearch(elements.globalSearchInput.value.trim().toLowerCase()); });
 
       elements.brandLogo.addEventListener("click", function() {
           if(document.body.classList.contains('admin-mode')) return;

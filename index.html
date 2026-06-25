@@ -684,8 +684,18 @@
     import { getFirestore, doc, setDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
     // --- [1] Firebase 연동 설정 ---
-    const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
-    const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-office-app';
+    const firebaseConfig = {
+      // ↓ 파이어베이스 콘솔에서 발급받은 본인의 설정값으로 변경해야 합니다! ↓
+ 	apiKey: "AIzaSyC7E-z_votRHTIgC0t0EFyEsZjOIjqnA98",
+  	authDomain: "connectwave-35809.firebaseapp.com",
+      projectId: "company-seat-map",
+      storageBucket: "company-seat-map.appspot.com",
+      messagingSenderId: "1234567890",
+      appId: "1:1234567890:web:abcdef123456"
+    };
+    
+    // 사내 오피스 고유 ID (원하는 이름으로 지정)
+    const appId = "my-company-office-2026";
     
     let app, auth, db, currentUser = null;
     let useFirebase = false;
